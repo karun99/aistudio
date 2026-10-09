@@ -1,0 +1,82 @@
+{
+  "app": {
+    "name": "aistudio",
+    "version": "unknown",
+    "description": ""
+  },
+  "stack": "python",
+  "routes": [
+    {
+      "method": "get",
+      "path": "/api/health"
+    },
+    {
+      "method": "get",
+      "path": "/api/status"
+    },
+    {
+      "method": "get",
+      "path": "/api/pipelines"
+    },
+    {
+      "method": "get",
+      "path": "/api/pipelines/{name}"
+    },
+    {
+      "method": "post",
+      "path": "/api/moderate"
+    },
+    {
+      "method": "post",
+      "path": "/api/moderate/batch"
+    },
+    {
+      "method": "post",
+      "path": "/api/productions"
+    },
+    {
+      "method": "get",
+      "path": "/api/productions"
+    },
+    {
+      "method": "get",
+      "path": "/api/productions/{pid}"
+    },
+    {
+      "method": "get",
+      "path": "/api/productions/{pid}/board"
+    },
+    {
+      "method": "get",
+      "path": "/api/productions/{pid}/artifacts/{name}"
+    },
+    {
+      "method": "post",
+      "path": "/api/productions/{pid}/approve"
+    },
+    {
+      "method": "post",
+      "path": "/api/productions/{pid}/reject"
+    },
+    {
+      "method": "post",
+      "path": "/api/productions/{pid}/cancel"
+    },
+    {
+      "method": "get",
+      "path": "/api/productions/{pid}/events"
+    },
+    {
+      "method": "get",
+      "path": "/projects/{pid}/{rest:path}"
+    }
+  ],
+  "pages": [],
+  "base_url": "http://localhost:8000",
+  "module": null,
+  "scripts": {},
+  "cli_entry": null,
+  "server": "mcp-server/mcp_server.py",
+  "runner": "python",
+  "runner_cmd": "python3"
+}
