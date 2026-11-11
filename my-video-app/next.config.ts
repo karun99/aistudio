@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Emit a self-contained server bundle for the container image.
+  output: "standalone",
   experimental: {
     serverActions: {
       bodySizeLimit: "50mb",
